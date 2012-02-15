@@ -28,6 +28,7 @@
 			<li><a href="#na">Home</a></li>
 			<li><a href="#na">About us</a></li>
 			<li><a href="#na">Products</a></li>
+			<li><a href="#na">Contact</a></li>
 		    </ul>
 		</nav>
 	    </div>
