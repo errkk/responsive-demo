@@ -19,7 +19,8 @@
 	<header class="site-header">
 	    <div class="wrap">
 		<div class="heading">
-		    <img src="http://placekitten.com/60/60" alt="" />
+<!--		    <img src="/img/m/logo.png" alt="" />-->
+		    <div class="ir logo"></div>
 		    <h1>Mobile Demo!!</h1>
 		    <h2>Time for a subheading</h2>
 		</div>
@@ -58,7 +59,7 @@
 		    </article>
 		</section>
 		<aside class="page-aside">
-		    <section class="box">
+		    <section class="box twitter">
 			<h2>Tweets</h2>
 			<ul class="tweets">
 			    <li>

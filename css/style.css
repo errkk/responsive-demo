@@ -65,10 +65,7 @@ td { vertical-align: top; }
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
 
-/**
- * Base Styles
- * =============================================================================
-*/
+
 @media screen {
     @font-face {
 	font-family: 'Muli';
@@ -84,13 +81,20 @@ td { vertical-align: top; }
 	src: local('Muli'), url('http://themes.googleusercontent.com/static/fonts/muli/v4/kU4XYdV4jtS72BIidPtqyw.woff') format('woff');
     }
 }
+
+
 /* Base Layout Styles */
 .wrap{padding:10px;}
 .main-content article{margin-bottom:10px;}
 #content{padding-bottom:20px;}
 
+/**
+ * Look and feel base styles
+ * =============================================================================
+ */
+ 
 /* Type + Colour */
-body{font-size:75%; color:#fdfdfd; font-family:Muli, Arial, sans-serif;  background:#3d202b;}
+body{font-size:75%; color:#fdfdfd; font-family:Muli, Arial, sans-serif;  background:#5f6567;}
 .main-content article{color:#555;}
 h1{font-size:3em; font-weight:bold;}
 h2{font-size:1.8em;}
@@ -104,25 +108,37 @@ a{text-decoration: none; color:#e1faee;}
 
 /* Header */ 
 .site-header{padding-top:10px;}
-.site-header .heading{color:#fff; border-bottom:2px solid #555; border-top:2px solid #555; padding:10px; margin:0 0 10px;}
-.site-header h1{text-transform: uppercase; text-shadow:0 1px 1px #000;}
-.site-header h2{margin:0;}
-.site-header h1 img{vertical-align:middle;}
+    .site-header .heading{color:#eee; border-bottom:2px solid #555; border-top:2px solid #555; padding:10px; margin:0 0 10px;}
+    .site-header h1{text-transform: uppercase; text-shadow:0 1px 1px #333;}
+    .site-header h2{margin:0;}
+    .site-header h1 img{vertical-align:middle;}
+    .site-header .logo{display:inline-block; vertical-align:top; width:64px; height:64px; background:url(/img/m/logo.png) 0 0 no-repeat;}
 
 
 /* Navigation */
 .nav-pri{}
-.nav-pri ul{text-align: center;}
-.nav-pri ul li{display:inline-block;}
-.nav-pri ul li a{padding:0.9em 0.5em 0.5em; background:#b42235; display:inline-block; color:#fff; font-weight:bold; text-transform: uppercase;}
-.nav-pri ul li a:hover{}
-.nav-pri ul li a:focus{}
+    .nav-pri ul{text-align: center;}
+    .nav-pri ul li{display:inline-block;}
+    .nav-pri ul li a{padding:0.9em 0.5em 0.5em; background:#222; display:inline-block; color:#fff; font-weight:bold; text-transform: uppercase;}
+    .nav-pri ul li a:hover{}
+    .nav-pri ul li a:focus{}
+    body,
+    .nav-pri ul li a{
+	background: rgb(125,126,125); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(125,126,125,1) 0%, rgba(14,14,14,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(125,126,125,1)), color-stop(100%,rgba(14,14,14,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* IE10+ */
+	background: linear-gradient(top, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+    }
 
 
 /* Articles */
 .main-content article{background:#fff; padding:10px; }
-.main-content article header{border-bottom:1px solid #ccc; padding-bottom:0.8em;}
-.main-content article header h2{margin:0;}
+    .main-content article header{border-bottom:1px solid #ccc; padding-bottom:0.8em;}
+    .main-content article header h2{margin:0;}
 
 /* Aside features */
 .box{}
@@ -132,24 +148,28 @@ a{text-decoration: none; color:#e1faee;}
 .box footer a{margin-left:2em; padding:0.3em 0.8em; background:#f27474;}
 
 /* Tweets */
-.tweets{padding:5px 0 0; border-top:1px solid #fff;}
-.tweets li{position:relative; padding-left:10px; list-style:none; display:block; padding:10px 0;}
-.tweets li .date{display:block; text-align:right;}
-.tweets li:before{content:'“'; font-family:Georgia, serif; font-size:5em; display:block; color:#fff; position:absolute; left:-15px; opacity:.3; top:-0.2em;}
-.tweets li p{display:inline; position:relative;}
-.tweets li p:after{content:'”'; font-family:Georgia, serif; font-size:5em; display:block; color:#fff; position:absolute; right:-15px; opacity:.3; bottom:-0.3em;}
+
+.twitter h2{background:url(/img/m/bird.png) 0 0 no-repeat; padding:10px 0 30px 60px; margin-bottom:-20px;}
+
+.tweets{}
+    .tweets li{position:relative; padding-left:10px; list-style:none; display:block; padding:10px 0;}
+    .tweets li .date{display:block; text-align:right;}
+    .tweets li:before{content:'“'; font-family:Georgia, serif; font-size:5em; display:block; color:#fff; position:absolute; left:-15px; opacity:.3; top:-0.2em;}
+    .tweets li p{display:inline; position:relative;}
+    .tweets li p:after{content:'”'; font-family:Georgia, serif; font-size:5em; display:block; color:#fff; position:absolute; right:-15px; opacity:.3; bottom:-0.3em;}
+
 
 
 /* Footer */
-
+.site-footer{ background:#5f6567; border-top:2px solid #ccc;}
 
 
 
 
 /**
- * Narrow Screen
+ * Narrow Screen Base layout, Everyone will get this
  * =============================================================================
-*/
+ */
 /* Header */
 .site-header .heading{text-align: center; font-size:0.8em;}
 .site-header h1{width:auto;}
@@ -167,9 +187,14 @@ a{text-decoration: none; color:#e1faee;}
 
 
 /* Footer */
-.site-footer {text-align:center; background:#000; border-top:2px solid #ccc;}
+.site-footer {text-align:center;}
 
 
+
+/**
+ * Progressively add complexity to the layout as screen space becomes available
+ * =============================================================================
+ */
 
 @media only screen and (min-width: 25em) {
     /* Horizontal Footer Links */
@@ -193,9 +218,9 @@ a{text-decoration: none; color:#e1faee;}
 
     /* Left align header */
     .site-header .heading{text-align:left; overflow:hidden;}
-    .site-header .heading img{ float:left; margin-top:0.67em;}
-    .site-header .heading h1,
-    .site-header .heading h2{ padding-left:15px; float:left; width:80%;}
+	.site-header .logo{ float:left;}
+	.site-header .heading h1,
+	.site-header .heading h2{ padding-left:80px; width:80%;}
 }
 
 @media only screen and (min-width: 45em) {
@@ -212,8 +237,27 @@ a{text-decoration: none; color:#e1faee;}
     .wrap{width:960px; margin:0 auto;}
 }
 
+/**
+ * High Res images for high pixel density devices
+ * =============================================================================
+ */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+    
+    /* Overrides with Highres images */
+    .site-header .logo{-webkit-background-size: 64px 64px; background-image:url(/img/m/logo@2x.png);}
+    .twitter h2{-webkit-background-size: 60px 68px; background-image:url(/img/m/bird@2x.png);}
+}
 
 
+/**
+ * Non-Semantic Helpers
+ * =============================================================================
+ */
+ 
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
 .ir br { display: none; }
 .hidden { display: none !important; visibility: hidden; }
