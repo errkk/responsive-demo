@@ -120,8 +120,8 @@ a{text-decoration: none; color:#e1faee;}
     .nav-pri ul{text-align: center;}
     .nav-pri ul li{display:inline-block;}
     .nav-pri ul li a{padding:0.9em 0.5em 0.5em; background:#222; display:inline-block; color:#fff; font-weight:bold; text-transform: uppercase;}
-    .nav-pri ul li a:hover{}
-    .nav-pri ul li a:focus{}
+    .nav-pri ul li a:hover,
+    .nav-pri ul li a:focus{background:#06e;}
     body,
     .nav-pri ul li a{
 	background: rgb(125,126,125); /* Old browsers */
@@ -247,9 +247,9 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     
+    .twitter h2{-webkit-background-size: 60px 68px; background-image:url(/img/m/bird@2x.png);}
     /* Overrides with Highres images */
     .site-header .logo{-webkit-background-size: 64px 64px; background-image:url(/img/m/logo@2x.png);}
-    .twitter h2{-webkit-background-size: 60px 68px; background-image:url(/img/m/bird@2x.png);}
 }
 
 

@@ -6,11 +6,21 @@
     <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title></title>
+	<title>Mobile Demo</title>
 	<meta name="description" content="">
 
+	<!-- Viewport -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Icon -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/h/apple-touch-icon.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/m/apple-touch-icon.png">
+	<link rel="apple-touch-icon-precomposed" href="/img/l/apple-touch-icon-precomposed.png">
+	<link rel="shortcut icon" href="/img/l/apple-touch-icon.png">
+
+	<link rel="stylesheet" href="/css/style.css">
 
 	<script src="/js/libs/modernizr-2.5.2.min.js"></script>
     </head>
