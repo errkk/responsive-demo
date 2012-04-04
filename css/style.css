@@ -112,7 +112,7 @@ a{text-decoration: none; color:#e1faee;}
     .site-header h1{text-transform: uppercase; text-shadow:0 1px 1px #333;}
     .site-header h2{margin:0;}
     .site-header h1 img{vertical-align:middle;}
-    .site-header .logo{display:inline-block; vertical-align:top; width:64px; height:64px; background:url(/img/m/logo.png) 0 0 no-repeat;}
+    .site-header .logo{display:inline-block; vertical-align:top; width:64px; height:64px; background:url(../img/m/logo.png) 0 0 no-repeat;}
 
 
 /* Navigation */
@@ -149,7 +149,7 @@ a{text-decoration: none; color:#e1faee;}
 
 /* Tweets */
 
-.twitter h2{background:url(/img/m/bird.png) 0 0 no-repeat; padding:10px 0 30px 60px; margin-bottom:-20px;}
+.twitter h2{background:url(../img/m/bird.png) 0 0 no-repeat; padding:10px 0 30px 60px; margin-bottom:-20px;}
 
 .tweets{}
     .tweets li{position:relative; padding-left:10px; list-style:none; display:block; padding:10px 0;}
@@ -247,9 +247,9 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
     
-    .twitter h2{-webkit-background-size: 60px 68px; background-image:url(/img/m/bird@2x.png);}
+    .twitter h2{-webkit-background-size: 60px 68px; background-image:url(../img/m/bird@2x.png);}
     /* Overrides with Highres images */
-    .site-header .logo{-webkit-background-size: 64px 64px; background-image:url(/img/m/logo@2x.png);}
+    .site-header .logo{-webkit-background-size: 64px 64px; background-image:url(../img/m/logo@2x.png);}
 }
 
 
